@@ -3,6 +3,7 @@ import { getUserFromClerkID } from "@/utils/auth";
 import { prisma } from "@/utils/db";
 import EntryCard from "@/components/EntryCard";
 import Link from "next/link";
+import { Analyze } from "@/utils/ai";
 
 const JournalEntries = async () => {
   const user = await getUserFromClerkID();
